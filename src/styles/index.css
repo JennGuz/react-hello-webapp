@@ -1,3 +1,30 @@
 /* 
     General Styles
 */
+.navbar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* background-color: black; */
+
+    & .logo {
+        width: 400px;
+        height: 200px;
+    }
+
+    & button {
+        position: absolute;
+        right: 150px;
+        top: 50px;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        background: yellow;
+    }
+
+}
+
+.footer{
+    background: black;
+}
+

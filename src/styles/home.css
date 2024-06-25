@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+
+.container {
+
+    display: flex;
+    justify-content: center;
+
+    & .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+        
+        & img {
+            width: 400px;
+            height: 200px;
+        }
+    }
+}
+
+    
+.gallery {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+    & img {
+        width: 250px;
+    }
+
+    & .card{
+        background-color: rgb(42, 42, 42);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        & .options {
+            display: flex;
+            position: relative;
+            bottom: 10px;
+            align-items: center;
+            gap: 20px;
+
+            & .learnMore {
+                cursor: pointer;
+                color: rgb(50, 50, 237);
+                padding: 10px;
+                background: white;
+                border-radius: 5px;
+                border-color: rgb(50, 50, 237);
+            }
+             
+            & .learnMore:hover {
+                background-color: rgb(50, 50, 237);
+                color: white;
+            }
+
+            & .heart {
+                font-size: 5px;
+                fill: white;
+                stroke: orange;
+                cursor: pointer;
+                border-color: orange;
+                border-radius: 5px;
+            }
+
+            & .heart:hover {
+                font-size: 10px;
+                fill: orange;
+                background-color: orange;
+                stroke: black;
+            }
+        }
+    }
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+    & img {
+        width: 300px;
+        height: 350px;
+    }
+
+    & .properties {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        width: 500px;
+        height: 290px;
+        padding: 30px;
+    }
+}
+
+.containerFav {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+
+    & .listaFav {
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        font-size: 20px;
+        width: 500px;
+
+        & .list{
+            display: flex;
+            justify-content: space-between;
+
+            & .icon{
+                cursor: pointer;
+            }
+        }
+    }
+    
+}
